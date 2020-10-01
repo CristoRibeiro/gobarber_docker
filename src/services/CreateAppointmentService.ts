@@ -21,7 +21,7 @@ class CreateAppointmentService {
     );
 
     if (sameDateAppointments) {
-      throw Error('This Appointment is already booked!');
+      throw Error('This Appointment is already booked! ');
     }
 
     const appointment = this.appointmentsRepository.create({
